@@ -116,6 +116,11 @@ a, a:hover, a:link, a:visited {
   padding: 20px;
   margin-left: 3rem;
 }
+@media (max-width: 679px) {
+  .getmore_header_logo {
+    margin: 0 auto;
+  }
+}
 .getmore_header_line {
   grid-column-start: 2;
   border-left: 1px solid #fff;
@@ -145,6 +150,11 @@ a, a:hover, a:link, a:visited {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+}
+@media (max-width: 679px) {
+  .getmore_header_nav_lang {
+    justify-content: space-around;
+  }
 }
 .getmore_header_nav_lang a {
   color: #fff;
@@ -239,6 +249,7 @@ a, a:hover, a:link, a:visited {
   .getmore_products {
     display: block;
     padding: 2rem;
+    height: 60vh;
   }
 }
 .getmore_products_txtgrn {
@@ -256,6 +267,11 @@ a, a:hover, a:link, a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+@media (max-width: 679px) {
+  .getmore_products_data {
+    word-break: break-word;
+  }
 }
 .getmore_products_data_title {
   font-size: 4.2rem;
