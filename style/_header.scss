@@ -1,0 +1,110 @@
+
+
+
+.getmore{
+  &_header{
+    display: grid;
+    grid-template-columns: 1fr .5fr 6fr 3fr .5fr 1fr;
+    grid-template-rows: 1fr 7fr 4fr;
+    background: url(./assets/img/bgheader.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    @media (max-width: 679px){
+      display: block;
+		}
+    &_logo{
+      grid-column-start: 1;
+      background: no-repeat center;
+      background-size: contain;
+      max-width: 0;
+      padding: 20px;
+      margin-left: 3rem;
+      
+    }
+    &_line{
+      grid-column-start:2;
+      border-left: 1px solid #fff;
+      grid-row: 1/4;
+    }
+    &_nav{
+      grid-column-start:3;
+      grid-row-start: 1;
+      align-self: end;
+      @media (max-width: 679px){
+        display: none;
+      }
+      &_menu{
+        display: flex;
+        color: $colorfont1;
+        a{     
+          padding-right: 2rem;
+          letter-spacing: 2px;
+        }
+        
+      }
+      &_lang{
+        grid-column-start:5;
+        grid-row-start: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between; 
+        a{
+          color: #fff;
+
+        }
+      }
+    }
+    &_data{
+      grid-column-start:3;
+      grid-row-start: 2;
+      align-self: flex-end;
+      @media (max-width: 679px){
+        padding:1rem ;
+      }
+      &_title{
+        font-size: $fontxl1;
+        color: $colorfont1;
+        line-height: 5rem;
+        letter-spacing: 2px;
+        span{
+          color: $colorfontgrn;
+          font-weight: 500;
+        }
+      }
+      &_btn{ 
+        border: 1px solid $colorfont1;
+        border-radius: 2rem;
+          padding: 1.5rem 0rem;
+          text-transform: uppercase;
+          display: block;
+          max-width: 269px;
+          text-align: center;
+          font-size:$fontsm;
+          margin-top: 2rem;
+          letter-spacing: 1.01px;
+          font-weight: 500;
+        a{
+          color: $colorfont1;
+        }
+        span{
+          
+          font-size: 1rem;
+        }
+
+      }
+    }
+    
+  }
+
+  &_bgtennis{
+    background: url(./assets/img/getmorebg2.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 50vh;
+  }
+
+}
+
+
+

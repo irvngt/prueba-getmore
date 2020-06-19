@@ -1,0 +1,31 @@
+.getmore_footer{
+  color: #2b3049;
+  background: $colorfontgrn;
+  padding: 5rem;
+  @media (max-width: 679px){
+    padding: 2rem;
+  }
+  &_nav{
+    padding-right:2rem;
+    letter-spacing:2px;
+    @media (max-width: 679px){
+      display: inline;
+      line-height: 28px;
+    }
+
+    &_menu{
+      font-weight:500;
+      font-size: 13px;
+      a{
+        letter-spacing:2px;
+        padding-right: 2rem;
+      }
+    }
+  }
+  &_social{
+    svg{
+      padding-top: 2rem;
+      padding-right: .7rem;
+    }
+  }
+}

@@ -1,0 +1,167 @@
+.getmore_sliders{
+  display: flex;
+  &_slide1{
+    &_carr{
+      &_one{
+        padding-left: 30%;
+        padding-top: 15%;
+        @media (max-width: 679px){
+          padding: 1rem;
+        }
+        &_title{
+          font-size: $fontxl1;
+          color: $colorfont1;
+          font-weight: 300;
+          text-align: left;
+          span{
+            font-weight: bold;
+          }
+        }
+        &_txt{
+          color: $colorfont1;
+          font-size: $fontlg;
+          letter-spacing: 1px;
+          line-height: 30px;
+          max-width: 300px;
+          padding-top: 2rem;
+        }
+      }
+    }
+  }
+  &_slide2{
+    display: flex;
+    &_bg{
+      background: url(./assets/img/raqeta.png) no-repeat center;
+      background-size: contain;
+      width: 100%;
+      height: auto;
+      padding: 8rem;
+      position: relative;
+      margin-left: 3rem;
+      &_num{
+        color: $colorfont1;
+        background: $colorfontgrn;
+        border-radius: 50%;
+        padding:1rem;
+        transform: translate(-7rem, -2rem);
+  
+    
+
+      }
+    }
+    
+  }
+}
+
+
+.hide {
+  display: none;
+}
+
+.hero-wrap {
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  margin: 0;
+}
+.hero-wrap .slick-prev,
+.hero-wrap .slick-next {
+  z-index: 9999;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    align-self: flex-end;
+
+    font-size: 1rem;
+    color: $colorfont1;
+    border: 1px solid $colorfont1;
+    border-radius: 50%;
+    padding: 1.5rem;
+    transition: 0.3s;
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+}
+.hero-wrap .slick-prev:hover,
+.hero-wrap .slick-next:hover {
+  cursor: pointer;
+  background: $colorfontgrn;
+  border: none;
+  box-shadow: 0px 8px 6px -6px #666
+
+}
+.hero-wrap .slick-prev {
+  -webkit-box-ordinal-group: 2;
+          order: 1;
+  text-align: right;
+  margin-left: -80px;
+}
+.hero-wrap .slick-next {
+  -webkit-box-ordinal-group: 4;
+          order: 3;
+  text-align: left;
+  margin-left: 20px;
+  
+
+}
+.hero-wrap .slick-list {
+  -webkit-box-ordinal-group: 3;
+          order: 2;
+  width: 500px;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 80%;
+  z-index: -1;
+}
+.hero-wrap .slick-dots {
+  width: 100%;
+  position: absolute;
+  bottom: 8rem;
+  left: 0;
+  z-index: 999;
+  text-align: center;
+}
+.hero-wrap .slick-dots li {
+  color: white;
+  display: inline;
+  font-size: 25px;
+  opacity: 0.6;
+}
+.hero-wrap .slick-dots li.slick-active {
+  opacity: 1;
+}
+.hero-wrap .slick-dots li + li {
+  margin-left: 15px;
+}
+.hero-wrap .slick-dots li:hover {
+  cursor: pointer;
+}
+.hero-wrap .hero {
+  width: 100%;
+  height: auto;
+  background-position: 0 0;
+}
+.hero-wrap .hero-1 {
+  background:url(./assets/img/slide1.jpg) no-repeat center;
+  background-size:cover;
+}
+.hero-wrap .hero-2 {
+  background:url(./assets/img/slide1.jpg) no-repeat center;
+  background-size:cover;
+}
+.hero-wrap .hero-3 {
+  background:url(./assets/img/slide1.jpg) no-repeat center;
+  background-size:cover;
+}
+.hero-wrap .slick-list,
+.hero-wrap .slick-track,
+.hero-wrap .slick-slide {
+  display: -webkit-box;
+  display: flex;
+}
